@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("./assets/images/bg.jpg");
+  background-color: #212931;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 15px;
+}
+
+.main h1 {
+  color: #ffffff;
+  font-size: 100px;
+  text-align: center;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: 14px;
+}
+
+.main p {
+  color: white;
+  font-style: italic;
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.main .icon {
+  color: white;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.main .icon:hover {
+  color: #212931;
+  cursor: pointer;
+}
+
+nav {
+  background-color: rgba(128, 128, 128, 0.5);
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+nav ul li:hover,
+nav ul li.active {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+nav ul {
+  padding-right: 40px;
+}
+
+nav ul a {
+  color: white;
+  padding: 0 10px;
+}
+
+nav ul a i:hover {
+  color: #212931;
+}
+
+.container {
+  width: 70%;
+}
+
+header {
+  background-color: white;
+  text-align: center;
+  padding: 0 8rem;
+  padding-top: 6rem;
+}
+
+header .hrLine {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+header .hrLine span {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 16px;
+  font-style: italic;
+}
+
+header .hrLine .horizontalLineLeft {
+  width: 40%;
+  margin: auto;
+  float: left;
+}
+
+header .hrLine .horizontalLineRight {
+  width: 40%;
+  margin: auto;
+  float: right;
+}
+
+header h1 {
+  font-size: 70px;
+  padding-bottom: 40px;
+  line-height: 1;
+  color: #212931;
+  font-weight: 900;
+}
+
+header p {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 16px;
+  font-style: italic;
+  padding-bottom: 3rem;
+  line-height: 2;
+}
+
+header img {
+  width: 100%;
+  padding-bottom: 3rem;
+}
+
+header .btn {
+  background: transparent;
+  border: 3px solid black;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+
+#navbar {
+  display: none;
+}
+
+header .btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+main .card {
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  width: 40%;
+  padding: 2rem;
+  flex-grow: 1;
+  text-align: center;
+}
+
+main .card p {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Merriweather", Georgia, serif;
+  line-height: 2;
+}
+
+main .card img {
+  margin: 25px 0;
+}
+
+main .card .btn {
+  border: 3px solid black;
+  background: transparent;
+  padding: 8px 20px;
+  font-size: 16px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+main .card .btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+section {
+  background-color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.pagination ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination ul li {
+  list-style-type: none;
+  padding: 5px 15px;
+}
+
+.pagination ul li:hover,
+.pagination ul li.active {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination ul .prev,
+.pagination ul .next {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  background-color: #eee;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .card {
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-top: none;
+  width: 40%;
+  padding: 4rem 3rem;
+  flex-grow: 1;
+  text-align: center;
+}
+
+footer .card label {
+  font-weight: 700;
+  display: block;
+  text-align: left;
+  color: #212931;
+  opacity: 0.7;
+}
+
+footer .card input {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  outline: none;
+  border-image-outset: none;
+  border-color: #2129315e;
+}
+
+footer .card textarea {
+  width: 100%;
+  margin: 10px 0;
+  resize: none;
+  outline: none;
+  border-image-outset: none;
+  border-color: #2129315e;
+}
+
+footer .card .btn {
+  background: transparent;
+  border: 3px solid #212931;
+  color: #212931;
+  padding: 10px 20px;
+  font-weight: 800;
+  opacity: 0.7;
+  display: flex;
+}
+
+footer .card .btn:hover {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+footer .card2 {
+  border-left: 1px solid rgba(128, 128, 128, 0.5);
+  width: 40%;
+  padding: 2.5rem 4rem;
+  flex-grow: 1;
+}
+
+footer .card2 .footerCard {
+  display: flex;
+  padding: 30px;
+}
+
+.footerCard strong {
+  padding-right: 80px;
+}
+
+.footerCard p {
+  color: #212931;
+}
+
+.footerCard i {
+  margin: 0 20px;
+}
